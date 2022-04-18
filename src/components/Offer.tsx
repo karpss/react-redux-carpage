@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React,{useEffect} from 'react';
+import {useEffect} from 'react';
 import { useCustomAppDispatch, useCustomAppSelector } from '../hooks/typeManagementHook';
 import {fetchOffers} from "../store/offers.actions";
 

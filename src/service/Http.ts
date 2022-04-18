@@ -4,6 +4,6 @@ import axios from 'axios';
 
 export default ()=>{
     return axios.create({
-        baseURL:'http://cdn.sixt.io/codingtask/'
+        // baseURL:'http://cdn.sixt.io/codingtask/'
     })
 }
