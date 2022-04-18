@@ -4,7 +4,7 @@ import Http from './Http';
 
 export default {
     async getAllOffers(){
-        var response= await Http().get('offers');
+        var response= await Http().get('offers.json');
         return response.data;
     }
 }

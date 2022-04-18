@@ -1,12 +1,11 @@
 /* eslint-disable */
 import React from 'react';
+import Offer from './components/Offer';
 
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <Offer/>
   );
 };
 
