@@ -3,8 +3,8 @@
 export interface OffersModel {
 "id": string,
 "description": string,
-"images": string,
-"prices": number
+"splashImages": any,
+"prices": any
 
 }
 
