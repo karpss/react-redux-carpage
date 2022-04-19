@@ -8,10 +8,7 @@ export default {
         var response= await Http().get('offers.json');
         return response.data.offers;
     } catch(error){
-        return error;
+      return Error(`Error fetching data ${error}`);
     }
-}
-}
-
-
-
+  },
+};
