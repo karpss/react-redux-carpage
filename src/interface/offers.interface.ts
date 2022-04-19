@@ -1,5 +1,7 @@
 /* eslint-disable */
 
+import { ByteLengthQueuingStrategy } from "stream/web"
+
 export interface OffersModel {
 "id": string,
 "description": string,

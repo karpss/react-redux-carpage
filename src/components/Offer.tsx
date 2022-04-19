@@ -2,6 +2,7 @@
 import {useEffect, useState} from 'react';
 import { useCustomAppDispatch, useCustomAppSelector } from '../hooks/typeManagementHook';
 import {fetchOffers} from "../store/offers.actions";
+import './Offer.css'
 
 
 const Offer = () => {
@@ -26,15 +27,15 @@ console.log(alloffers);
   return (
     <>
       
-      <h2> Offer Details </h2>
+      <div className='container'>
       
       {
        
         
      alloffers.map((offr)=>(
-          <div key={offr.id}>
+          <div className='card' key={offr.id}>
 
-            {/* <img src={offr.splashImages[0].url} alt="cars" /> */}
+            
 
             <img src={offr.splashImages? offr.splashImages[0].narrowMedium : ''} alt=""  />
 
@@ -56,10 +57,10 @@ console.log(alloffers);
          }
       
       
-      
+      </div>
 
     </>
   )
 }
 
-export default Offer
+export default Offer;
